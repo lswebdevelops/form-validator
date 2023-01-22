@@ -12,56 +12,28 @@
 </head>
 <body>
     <h1>Form Validator</h1>
-    <nav>
-        <ul>
-          <li>style 1
-            <ul class="drop-menu menu-#{i}">
-              <li>uno</li>
-              <li>dos</li>
-              <li>tres</li>
-              <li>cuatro</li>
-              <li>cinco</li>
-              <li>seis</li>
-            </ul>
-          </li>
-          <li>style 2
-            <ul class="drop-menu menu-#{i}">
-              <li>uno</li>
-              <li>dos</li>
-              <li>tres</li>
-              <li>cuatro</li>
-              <li>cinco</li>
-              <li>seis</li>
-            </ul>
-          </li>
-          <li>style 3
-            <ul class="drop-menu menu-#{i}">
-              <li>uno</li>
-              <li>dos</li>
-              <li>tres</li>
-              <li>cuatro</li>
-              <li>cinco</li>
-              <li>seis</li>
-            </ul>
-          </li>
-          <li>style 4
-            <ul class="drop-menu menu-#{i}">
-              <li>uno</li>
-              <li>dos</li>
-              <li>tres</li>
-              <li>cuatro</li>
-              <li>cinco</li>
-              <li>seis</li>
-            </ul>
-          </li>
-        </ul>
-    </nav>
+
+
+    <ul>
+        <li ><a class="home" href="#home">Home</a></li>
+        <li ><a class="news" href="#news">News</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+      </ul>
+
+
+
+
 <div class="container">
     <div class="left">
-        <img 
-        src="/images/20230105_164701.jpg" 
-        alt="man on a computer" 
-        class="image">
+        <div class="image">
+        </div>
     </div>
     <div class="right">
       
@@ -80,6 +52,8 @@
                 </label>
                 <label for="email">Email:
                     <input 
+                    placeholder="type your email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                     id="email"
                     type="email" 
                     name="email">
