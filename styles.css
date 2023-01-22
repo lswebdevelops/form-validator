@@ -95,7 +95,7 @@ input{
     margin-top: -150px;
     border-radius: 4px;
     clip-path: polygon(0% 22%, 100% 22%, 100% 100%, 0% 100%);
-    background-image: url(/images/20230105_164701.jpg);
+    background-image: url(./images/20230105_164701.jpg);
     background-position: 0% 30%; /* Bottom 70% of image is visible */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Scale the image to cover the entire div */
