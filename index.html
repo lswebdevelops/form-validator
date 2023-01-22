@@ -58,50 +58,62 @@
 <div class="container">
     <div class="left">
         <img 
-        src="colin-meg-BxQeZ9UQQhA-unsplash.jpg" 
+        src="20230105_164701.jpg" 
         alt="man on a computer" 
         class="image">
     </div>
     <div class="right">
-        <form action="form" id="form">
+      
+            <form 
+                onsubmit="return checkForm(this)" 
+                onsubmit="return checkPasswords()" 
+                action="form" 
+                id="form">
             <fieldset>
                 <legend>Contact Details </legend>
                 <label for="name">Name:
                     <input 
+                        id="name"
                         type="text" 
                         name="name">
                 </label>
                 <label for="email">Email:
                     <input 
+                    id="email"
                     type="email" 
                     name="email">
                </label>
                 <label for="phone">Phone:
                     <input 
+                    placeholder="+12-34-555-678900"
+                    pattern="\+\d{2}[\-]\d{2}[\-]\d{3}[\-]\d{6}"
                     name="phone" 
-                    type="phone">
+                    type="text">
                 </label>
                 <label for="zip">Zip Code:
                     <input 
+                        placeholder="99.888.765"
+                        pattern="\d{2}[\.]\d{3}[\.]\d{3}"
                         name="zip" 
-                        type="number">
+                        type="text">
                 </label>
-                <label for="password">Password:
-                    <input 
-                    name="password" 
-                    type="password">
-                </label>
-                <label for="password2">Confirm Password:
-                    <input 
-                    name="password2"
-                    type="password">
-                </label>
-                <label for="country">Country:
-                    <input 
-                    name="country" 
-                    type="text">
-                </label>
-                <button>Submit</button>              
+             
+                    <label for="password">Password:
+                      <input 
+                        placeholder="min 6 characters, uppercase, lowercase, number and a symbol"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,}"
+                        name="password" 
+                        type="password">
+                    </label>
+                    <label for="password2">Confirm Password:
+                      <input 
+                        placeholder="the same as above"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,}"
+                        name="password2"
+                        type="password">
+                    </label>
+                    <input type="submit" value="Submit">
+                           
             </fieldset>
         </form>
     </div>

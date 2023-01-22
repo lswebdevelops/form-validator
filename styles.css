@@ -100,7 +100,11 @@ nav {
       transform: rotateY(0deg) translateY(0px);
     }
   }
-  
+  legend{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
   .container{
     gap: 5px;
     display: grid;
@@ -176,4 +180,8 @@ input{
   
   input:valid {
     border: 2px solid #1eb635;
+  }
+
+  .left img{
+    border-radius: 4px;
   }
